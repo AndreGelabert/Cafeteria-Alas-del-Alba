@@ -58,7 +58,7 @@
 </head>
 <body class="bg-background-light dark:bg-background-dark text-gray-800 dark:text-gray-200 transition-colors duration-300">
 <nav class="fixed w-full z-50 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-gray-100 dark:border-zinc-800 transition-colors duration-300">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="flex justify-between items-center h-20">
 <div class="flex-shrink-0 flex items-center gap-2">
 <span class="material-symbols-outlined text-primary text-3xl">bakery_dining</span>
@@ -105,7 +105,6 @@
 <button class="text-gray-600 dark:text-gray-300 hover:text-primary focus:outline-none" id="mobile-menu-btn">
 <span class="material-symbols-outlined text-3xl">menu</span>
 </button>
-</div>
 </div>
 </div>
 </div>
@@ -224,7 +223,7 @@
 </div>
 </div>
 </section>
-<section class="py-16 bg-white dark:bg-background-dark/50" id="menu">
+<section class="py-16 md:py-24 bg-background-light dark:bg-background-dark" id="menu">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="text-center mb-16">
 <span class="text-secondary font-bold tracking-widest uppercase text-sm" data-i18n="menuHighlights">Destaques</span>
@@ -299,61 +298,8 @@
 <h2 class="font-display text-4xl text-primary mb-2" data-i18n="reviewsTitle">O que dizem sobre nós</h2>
 <p class="text-lg text-gray-600 dark:text-gray-400 font-medium" data-i18n="reviewsRating">4.9/5 estrelas no Google Maps</p>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-<div class="bg-white dark:bg-zinc-800 p-8 rounded-2xl shadow-lg border border-gray-100 dark:border-zinc-700 flex flex-col h-full relative">
-<span class="material-symbols-outlined text-6xl text-primary/10 absolute top-4 right-4">format_quote</span>
-<div class="flex items-center gap-1 text-yellow-400 mb-4">
-<span class="material-symbols-outlined text-sm fill-1">star</span>
-<span class="material-symbols-outlined text-sm fill-1">star</span>
-<span class="material-symbols-outlined text-sm fill-1">star</span>
-<span class="material-symbols-outlined text-sm fill-1">star</span>
-<span class="material-symbols-outlined text-sm fill-1">star</span>
-</div>
-<p class="text-gray-600 dark:text-gray-300 mb-6 italic flex-grow" data-i18n="review1">"Um lugar encantador! O café é delicioso e as medialunas são divinas. O atendimento é super atencioso e o ambiente muito acolhedor. Voltarei com certeza!"</p>
-<div class="flex items-center gap-3 mt-auto">
-<div class="w-10 h-10 rounded-full bg-secondary/30 flex items-center justify-center text-secondary font-bold">MS</div>
-<div>
-<p class="font-bold text-gray-800 dark:text-white text-sm" data-i18n="review1Name">Maria Silva</p>
-<p class="text-xs text-gray-500 dark:text-gray-400" data-i18n="review1Role">Local Guide</p>
-</div>
-</div>
-</div>
-<div class="bg-white dark:bg-zinc-800 p-8 rounded-2xl shadow-lg border border-gray-100 dark:border-zinc-700 flex flex-col h-full relative">
-<span class="material-symbols-outlined text-6xl text-primary/10 absolute top-4 right-4">format_quote</span>
-<div class="flex items-center gap-1 text-yellow-400 mb-4">
-<span class="material-symbols-outlined text-sm fill-1">star</span>
-<span class="material-symbols-outlined text-sm fill-1">star</span>
-<span class="material-symbols-outlined text-sm fill-1">star</span>
-<span class="material-symbols-outlined text-sm fill-1">star</span>
-<span class="material-symbols-outlined text-sm fill-1">star</span>
-</div>
-<p class="text-gray-600 dark:text-gray-300 mb-6 italic flex-grow" data-i18n="review2">"Las mejores medialunas que probé en mi vida. El lugar es hermoso y la atención de las chicas es excelente. Muy recomendable para un desayuno tranquilo."</p>
-<div class="flex items-center gap-3 mt-auto">
-<div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold">JC</div>
-<div>
-<p class="font-bold text-gray-800 dark:text-white text-sm" data-i18n="review2Name">Juan Carlos</p>
-<p class="text-xs text-gray-500 dark:text-gray-400" data-i18n="review2Role">Turista</p>
-</div>
-</div>
-</div>
-<div class="bg-white dark:bg-zinc-800 p-8 rounded-2xl shadow-lg border border-gray-100 dark:border-zinc-700 flex flex-col h-full relative">
-<span class="material-symbols-outlined text-6xl text-primary/10 absolute top-4 right-4">format_quote</span>
-<div class="flex items-center gap-1 text-yellow-400 mb-4">
-<span class="material-symbols-outlined text-sm fill-1">star</span>
-<span class="material-symbols-outlined text-sm fill-1">star</span>
-<span class="material-symbols-outlined text-sm fill-1">star</span>
-<span class="material-symbols-outlined text-sm fill-1">star</span>
-<span class="material-symbols-outlined text-sm fill-1">star</span>
-</div>
-<p class="text-gray-600 dark:text-gray-300 mb-6 italic flex-grow" data-i18n="review3">"Ambiente pet friendly de verdade! Fui com meu cachorro e fomos muito bem recebidos. O brunch estava espetacular, especialmente o avocado toast."</p>
-<div class="flex items-center gap-3 mt-auto">
-<div class="w-10 h-10 rounded-full bg-teal-100 flex items-center justify-center text-teal-700 font-bold">AP</div>
-<div>
-<p class="font-bold text-gray-800 dark:text-white text-sm" data-i18n="review3Name">Ana Paula</p>
-<p class="text-xs text-gray-500 dark:text-gray-400" data-i18n="review3Role">Cliente Frequente</p>
-</div>
-</div>
-</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8" id="reviews-grid">
+  <!-- Las reseñas se renderizan dinámicamente desde site.js -->
 </div>
 </div>
 </section>
@@ -469,5 +415,5 @@
 </div>
 </footer>
 </body>
-<script src="site.js"></script>
 </html>
+<script src="site.js"></script>

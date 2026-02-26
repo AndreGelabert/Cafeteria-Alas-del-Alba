@@ -1,3 +1,342 @@
+// Pool de reseñas auténticas de Google Maps
+const reviewsPool = {
+  pt: [
+    {
+      text: "Nos dias que passei em Bombas não perdi nenhum sem vir tomar café da manhã neste lugar encantador. Atendimento maravilhoso, comida deliciosa. Tudo organizado, tudo impecável, estão atentos a todos os detalhes.",
+      name: "Sofia Colazo",
+      role: "Local Guide · 15 avaliações",
+      stars: 5,
+      initials: "SC",
+      color: "bg-secondary/30 text-secondary"
+      },
+      {
+      text: "Excelente lugar. Tanto o café gelado quanto o quente são uma delícia, as torradas (egg toast e avocado toast) maravilhosas. As medialunas são ótimas!! E as pessoas são muito queridas. Finalmente uma cafeteria como deve ser 🤣❤️❤️❤️",
+      name: "Constanza Randazzo",
+      role: "Turista",
+      stars: 5,
+      initials: "CR",
+      color: "bg-primary/20 text-primary"
+      },
+      {
+      text: "Tem um cardápio bem argentino. É o lanche perfeito ao voltar da praia. Deixo uma fotinho de uma medialuna com doce de leite 🥐",
+      name: "Angie Lorena Avila Rosales",
+      role: "Local Guide · 30 avaliações",
+      stars: 5,
+      initials: "A",
+      color: "bg-teal-100 text-teal-700"
+      },
+      {
+      text: "O ambiente do lugar é muito acolhedor.<br>O atendimento foi muito gentil e nos recomendaram atividades para fazer.<br>A comida nota 10!!! Excelente custo benefício.",
+      name: "Sabrina Leiva",
+      role: "Turista",
+      stars: 5,
+      initials: "SL",
+      color: "bg-pink-100 text-pink-700"
+      },
+      {
+      text: "Uma experiência inesquecível em sabores.. atendimento muito bom.. destaco os sabores incríveis.. tudo mais que perfeito... Levo uma ótima lembrança das minhas férias... Obrigado.",
+      name: "Leandro Geronimo",
+      role: "Local Guide · 45 avaliações",
+      stars: 5,
+      initials: "LG",
+      color: "bg-amber-100 text-amber-700"
+      },
+      {
+      text: "Muito gostoso tudo. Comemos um croissant de brigadeiro bem servido, café e suco de laranja. Ambientação muito bonita e ótimo atendimento ♥️",
+      name: "Lucrecia Piquet",
+      role: "Local Guide · 26 avaliações",
+      stars: 5,
+      initials: "LP",
+      color: "bg-secondary/30 text-secondary"
+      },
+      {
+      text: "100% recomendado! Ambiente, atendimento e comida, tudo excelente.<br>As medialunas mais gostosas que provamos em Bombinhas (somos argentinos)<br>Muita variedade em cafeteria e confeitaria. Se procuram um lugar para tomar café da manhã ou lanchar, precisam conhecer o Alas del Alba.",
+      name: "Pablo Pino",
+      role: "Turista",
+      stars: 5,
+      initials: "P",
+      color: "bg-teal-100 text-teal-700"
+      },
+      {
+      text: "Excelente lugar, muito saboroso! Recomendo muito que visitem! Ideal para dias de chuva! O misto quente de presunto e queijo meu Deus, uma loucura, nunca comi um tão bom na vida! 10 de 10!",
+      name: "Daniel Ricon",
+      role: "Local Guide · 45 avaliações",
+      stars: 5,
+      initials: "DR",
+      color: "bg-amber-100 text-amber-700"
+      },
+      {
+      text: "Excelentes todos os pratos, as tortas com sabores incríveis, realmente dá para perceber a excelente qualidade dos ingredientes! Voltaria com certeza 😍",
+      name: "Dustin Carabajal",
+      role: "Turista",
+      stars: 5,
+      initials: "DC",
+      color: "bg-secondary/20 text-secondary"
+      },
+      {
+      text: "Lugar lindo e acolhedor para aproveitar em família, excelente atendimento. Comida farta e deliciosa",
+      name: "Florencia Belisan",
+      role: "Turista",
+      stars: 5,
+      initials: "FB",
+      color: "bg-pink-100 text-pink-700"
+      },
+      {
+      text: "Sem dúvidas a melhor cafeteria de Bombinhas. Excelente atendimento e tudo muito gostoso. Como se estivesse na Argentina. PARABÉNS!",
+      name: "Joni Gomez",
+      role: "Turista",
+      stars: 5,
+      initials: "J",
+      color: "bg-indigo-100 text-indigo-700"
+      },
+      {
+      text: "Excelente atendimento, comida muito deliciosa e ambiente super agradável, as pessoas que atendem são muito atenciosas e simpáticas. 100% recomendado.",
+      name: "Elias Fabbro",
+      role: "Turista",
+      stars: 5,
+      initials: "E",
+      color: "bg-fuchsia-100 text-fuchsia-700"
+      },
+      {
+      text: "Adoramos!! Cafés da manhã muito gostosos. Tem chá",
+      name: "Daniela Alejandra Arellano",
+      role: "Turista",
+      stars: 5,
+      initials: "D",
+      color: "bg-green-100 text-green-700"
+      },
+      {
+      text: "Excelente atendimento de todos! tudo muito gostoso, ambiente muito bonito e aconchegante!",
+      name: "Marite Nieto",
+      role: "Turista",
+      stars: 5,
+      initials: "M",
+      color: "bg-red-100 text-red-700"
+      },
+      {
+      text: "Fomos em família lanchar, excelente o café quente e gelado, boas variedades na confeitaria. Parabéns",
+      name: "Alfredo Gimenez",
+      role: "Local Guide · 11 opiniones",
+      stars: 5,
+      initials: "A",
+      color: "bg-yellow-100 text-yellow-700"
+      },
+      {
+      text: "A comida é deliciosa! Muita panificação argentina. Atendimento e local excelentes, voltaria mil vezes!!",
+      name: "Facundo Veneziano",
+      role: "Turista",
+      stars: 5,
+      initials: "F",
+      color: "bg-violet-100 text-violet-700"
+      },
+      {
+      text: "Muito boa a experiência, qualidade da comida excelente e atendimento espetacular. Um abraço da Espanha.",
+      name: "Etienne Lamuniere",
+      role: "Turista",
+      stars: 5,
+      initials: "E",
+      color: "bg-stone-100 text-stone-700"
+      },
+      {
+      text: "O ambiente é pequeno, mas o local é confortável, e falam espanhol, algo muito importante já que quase ninguém consegue se comunicar na região.",
+      name: "Carla Gutierrez Acosta",
+      role: "Local Guide · 31 avaliações",
+      stars: 4,
+      initials: "CA",
+      color: "bg-teal-100 text-teal-700"
+    }
+  ],
+  es: [
+    {
+      text: "Los días que pase en bombas no perdí ninguno sin venir a desayunar a este lugar encantador. Maravillosa atención , comida deliciosa. Todo prolijo , todo impecable, están en todos los detalles.",
+      name: "Sofia Colazo",
+      role: "Local Guide · 15 reseñas",
+      stars: 5,
+      initials: "SC",
+      color: "bg-secondary/30 text-secondary"
+    },
+    {
+      text: "Excelente lugar. Tanto el café frío como el caliente una delicia, sus tostadas (egg toast y avocado toast) una delicia. Las medialunas geniales!! Y la gente un amor . Al fin una cafetería como la gente 🤣❤️❤️❤️",
+      name: "Constanza Randazzo",
+      role: "Turista",
+      stars: 5,
+      initials: "CR",
+      color: "bg-primary/20 text-primary"
+    },
+    {
+      text: "Tienen una carta bien argenta. Es la merienda que necesitas al volver de la Praia. Dejo fotito de una medialuna con dulce de leche 🥐",
+      name: "Angie Lorena Avila Rosales",
+      role: "Local Guide · 30 reseñas",
+      stars: 5,
+      initials: "A",
+      color: "bg-teal-100 text-teal-700"
+    },
+    {
+      text: "El ambiente del lugar es muy cálido.<br>La atención muy amable y nos recomendó actividades para realizar.<br>La comida un 10!!! Excelente relación precio calidad.",
+      name: "Sabrina Leiva",
+      role: "Turista",
+      stars: 5,
+      initials: "SL",
+      color: "bg-pink-100 text-pink-700"
+    },
+    {
+      text: "Una experiencia inolvidable en cuanto a sabores.. muy buena atención .. destacó los sabores increíbles.. todo más q bien... Me llevo un buen recuerdo de mis vacaciones... Gracias.",
+      name: "Leandro Geronimo",
+      role: "Local Guide · 45 reseñas",
+      stars: 5,
+      initials: "LG",
+      color: "bg-amber-100 text-amber-700"
+    },
+    {
+      text: "Muy rico todo. Comimos una croissant de brigadeiro que era muy abundante, café y jugo de naranja. Muy linda ambientación y atención ♥️",
+      name: "Lucrecia Piquet",
+      role: "Local Guide · 26 reseñas",
+      stars: 5,
+      initials: "LP",
+      color: "bg-secondary/30 text-secondary"
+    },
+    {
+      text: "100% recomendable! Ambiente, atención y comida, todo genial.<br>Las medialunas más ricas que probamos en Bombinhas (somos argentinos)<br>Mucha variedad en cafetería y pastelería. Si buscan un lugar para desayunar y/o merendar, tienen que pasar por Alas del Alba.",
+      name: "Pablo Pino",
+      role: "Turista",
+      stars: 5,
+      initials: "P",
+      color: "bg-teal-100 text-teal-700"
+    },
+    {
+      text: "Excelente lugar, súper rico! Recomiendo mucho que vayan! Ideal para días de lluvia! El tostado de jamón y queso Dios mío una locura, nunca en mi vida comí un tostado tan rico! 10 de 10!",
+      name: "Daniel Ricon",
+      role: "Local Guide · 45 reseñas",
+      stars: 5,
+      initials: "DR",
+      color: "bg-amber-100 text-amber-700"
+    },
+    {
+      text: "Excelente todos los platos , las tortas con sabores increíbles, realmente se nota una calidad excelente en los ingredientes! Volvería a venir 😍",
+      name: "Dustin Carabajal",
+      role: "Turista",
+      stars: 5,
+      initials: "DC",
+      color: "bg-secondary/20 text-secondary"
+    },
+    {
+      text: "Hermoso y cálido lugar para disfrutar en familia, excelente atención. La comida abundante y deliciosa",
+      name: "Florencia Belisan",
+      role: "Turista",
+      stars: 5,
+      initials: "FB",
+      color: "bg-pink-100 text-pink-700"
+    },
+    {
+      text: "Sin dudas la mejor cafeteria de bombinhas. Excelente atencion y todo muy rico. Como si estuvieras en argentina. LOS FELICITO !",
+      name: "Joni Gomez",
+      role: "Turista",
+      stars: 5,
+      initials: "J",
+      color: "bg-indigo-100 text-indigo-700"
+    },
+    {
+      text: "Excelente servicio, la comida muy deliciosa y el ambiente es super agradable, las personas que atienden super atentas y buena onda. 100% recomendable.",
+      name: "Elias Fabbro",
+      role: "Turista",
+      stars: 5,
+      initials: "E",
+      color: "bg-fuchsia-100 text-fuchsia-700"
+    },
+    {
+      text: "Nos encantó!! Muy ricos desayunos Hay té",
+      name: "Daniela Alejandra Arellano",
+      role: "Turista",
+      stars: 5,
+      initials: "D",
+      color: "bg-green-100 text-green-700"
+    },
+    {
+      text: "Excelente atención de todos! todo muy rico, el ambiente muy hermoso y acogedor!",
+      name: "Marite Nieto",
+      role: "Turista",
+      stars: 5,
+      initials: "M",
+      color: "bg-red-100 text-red-700"
+    },
+    {
+      text: "Fuimos en Flia. A merendar exelente el Café caliente y Frío de buenas variedades en parte de confitería felicitaciones",
+      name: "Alfredo Gimenez",
+      role: "Local Guide · 11 opiniones",
+      stars: 5,
+      initials: "A",
+      color: "bg-yellow-100 text-yellow-700"
+    },
+    {
+      text: "La comida riquísima! Mucha panaderia Argentina. La atención y el lugar excelente, volvería mil veces más!!",
+      name: "Facundo Veneziano",
+      role: "Turista",
+      stars: 5,
+      initials: "F",
+      color: "bg-violet-100 text-violet-700"
+    },
+    {
+      text: "Muy buena la experiencia, la calidad de la comida excelente y el servicio espectacular. Un saludo desde España.",
+      name: "Etienne Lamuniere",
+      role: "Turista",
+      stars: 5,
+      initials: "E",
+      color: "bg-stone-100 text-stone-700"
+    },
+    {
+      text: "El ambiente es chico, pero el local es cómodo, y hablan español, algo importantísimo ya que casi nadie puede comunicarse en la zona.",
+      name: "Carla Gutierrez Acosta",
+      role: "Local Guide · 31 reseñas",
+      stars: 4,
+      initials: "CA",
+      color: "bg-teal-100 text-teal-700"
+    }
+  ]
+};
+
+// Seleccionar 3 reseñas al azar sin repetir
+function getRandomReviews(lang) {
+  const pool = [...reviewsPool[lang]];
+  const selected = [];
+  while (selected.length < 3 && pool.length > 0) {
+    const idx = Math.floor(Math.random() * pool.length);
+    selected.push(pool.splice(idx, 1)[0]);
+  }
+  return selected;
+}
+
+// Construir las estrellas SVG
+function buildStars(count) {
+  return Array.from({ length: count }, () =>
+    `<span class="material-symbols-outlined text-sm fill-1">star</span>`
+  ).join('');
+}
+
+// Renderizar las reseñas aleatorias en el DOM
+function renderRandomReviews() {
+  const grid = document.getElementById('reviews-grid');
+  if (!grid) return;
+
+  const reviews = getRandomReviews(currentLanguage);
+
+  grid.innerHTML = reviews.map(r => `
+    <div class="bg-white dark:bg-zinc-800 p-8 rounded-2xl shadow-lg border border-gray-100 dark:border-zinc-700 flex flex-col h-full relative">
+      <span class="material-symbols-outlined text-6xl text-primary/10 absolute top-4 right-4">format_quote</span>
+      <div class="flex items-center gap-1 text-yellow-400 mb-4">
+        ${buildStars(r.stars)}
+      </div>
+      <p class="text-gray-600 dark:text-gray-300 mb-6 italic flex-grow">"${r.text}"</p>
+      <div class="flex items-center gap-3 mt-auto">
+        <div class="w-10 h-10 rounded-full ${r.color} flex items-center justify-center font-bold">${r.initials}</div>
+        <div>
+          <p class="font-bold text-gray-800 dark:text-white text-sm">${r.name}</p>
+          <p class="text-xs text-gray-500 dark:text-gray-400">${r.role}</p>
+        </div>
+      </div>
+    </div>
+  `).join('');
+}
+
 // Configuración de idiomas
 const translations = {
   pt: {
@@ -26,7 +365,7 @@ const translations = {
     menuHighlights: "Destaques",
     menuFavorites: "Nossos Favoritos",
     menuViewAll: "Ver menu completo",
-    product1: "Medialunas Artesanales",
+    product1: "Medialunas Artesanais",
     product1Desc: "Feitas à mão diariamente, amanteigadas e com a doçura perfeita.",
     product1Price: "R$ 12,00",
     product2: "Café de Especialidade",
@@ -38,15 +377,6 @@ const translations = {
     bestSeller: "Best Seller",
     reviewsTitle: "O que dizem sobre nós",
     reviewsRating: "4.9/5 estrelas no Google Maps",
-    review1: "Um lugar encantador! O café é delicioso e as medialunas são divinas. O atendimento é super atencioso e o ambiente muito acolhedor. Voltarei com certeza!",
-    review1Name: "Maria Silva",
-    review1Role: "Local Guide",
-    review2: "Las mejores medialunas que probé en mi vida. El lugar es hermoso y la atención de las chicas es excelente. Muy recomendable para un desayuno tranquilo.",
-    review2Name: "Juan Carlos",
-    review2Role: "Turista",
-    review3: "Ambiente pet friendly de verdade! Fui com meu cachorro e fomos muito bem recebidos. O brunch estava espetacular, especialmente o avocado toast.",
-    review3Name: "Ana Paula",
-    review3Role: "Cliente Frequente",
     locationTitle: "Venha nos visitar",
     locationAddress: "Endereço",
     locationAddressText: "Rua Colibri, 223<br/>Bombas, Bombinhas - SC<br/>88215-000, Brazil",
@@ -96,7 +426,7 @@ const translations = {
     product1: "Medialunas Artesanales",
     product1Desc: "Hechas a mano diariamente, mantecosas y con el dulce perfecto.",
     product1Price: "R$ 12,00",
-    product2: "Café de Especialidad",
+    product2: "Café de Especialidade",
     product2Desc: "Granos seleccionados, tostado perfecto y latte art para alegrar tu día.",
     product2Price: "R$ 14,00",
     product3: "Cheesecake con Frutos Rojos",
@@ -105,15 +435,6 @@ const translations = {
     bestSeller: "Más Vendido",
     reviewsTitle: "Lo que dicen sobre nosotros",
     reviewsRating: "4.9/5 estrellas en Google Maps",
-    review1: "¡Un lugar encantador! El café es delicioso y las medialunas son divinas. El servicio es muy atento y el ambiente muy acogedor. ¡Volveré con seguridad!",
-    review1Name: "María Silva",
-    review1Role: "Local Guide",
-    review2: "Las mejores medialunas que probé en mi vida. El lugar es hermoso y la atención de las chicas es excelente. Muy recomendable para un desayuno tranquilo.",
-    review2Name: "Juan Carlos",
-    review2Role: "Turista",
-    review3: "¡Ambiente pet friendly de verdad! Fui con mi perro y fuimos muy bien recibidos. El brunch estaba espectacular, especialmente el avocado toast.",
-    review3Name: "Ana Paula",
-    review3Role: "Cliente Frecuente",
     locationTitle: "Ven a visitarnos",
     locationAddress: "Dirección",
     locationAddressText: "Rua Colibri, 223<br/>Bombas, Bombinhas - SC<br/>88215-000, Brasil",
@@ -136,7 +457,7 @@ const translations = {
   }
 };
 
-// Estado actual
+// Estado atual
 let currentLanguage = localStorage.getItem('language') || 'pt';
 
 // Inicializar al cargar la página
@@ -145,6 +466,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initDarkMode();
   initMobileMenu();
   checkOpenStatus();
+  renderRandomReviews();
 });
 
 // Inicializar el idioma
@@ -158,7 +480,6 @@ function setLanguage(lang) {
   currentLanguage = lang;
   localStorage.setItem('language', lang);
   
-  // Actualizar todos los elementos con data-i18n
   document.querySelectorAll('[data-i18n]').forEach(element => {
     const key = element.getAttribute('data-i18n');
     if (translations[lang] && translations[lang][key]) {
@@ -171,6 +492,8 @@ function setLanguage(lang) {
   });
   
   updateLanguageSelector();
+  renderRandomReviews();
+  checkOpenStatus();
 }
 
 // Actualizar el selector de idioma en el navbar
@@ -245,12 +568,8 @@ function updateThemeIcon() {
   
   const iconName = isDark ? 'light_mode' : 'dark_mode';
   
-  if (themeIcon) {
-    themeIcon.textContent = iconName;
-  }
-  if (themeIconMobile) {
-    themeIconMobile.textContent = iconName;
-  }
+  if (themeIcon) themeIcon.textContent = iconName;
+  if (themeIconMobile) themeIconMobile.textContent = iconName;
 }
 
 // Cargar el tema guardado
@@ -264,7 +583,6 @@ function loadTheme() {
   updateThemeIcon();
 }
 
-// Ejecutar loadTheme al cargar
 loadTheme();
 
 // Mobile menu toggle
@@ -277,7 +595,6 @@ function initMobileMenu() {
       mobileMenu.classList.toggle('hidden');
     });
     
-    // Cerrar menú al hacer clic en enlaces
     mobileMenu.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
         mobileMenu.classList.add('hidden');
@@ -318,13 +635,10 @@ function checkOpenStatus() {
   const minutes = now.getMinutes();
   const currentTime = hours + minutes / 60;
   
-  // Horarios: 8:00-12:00 y 16:00-20:30
   const isOpen = (currentTime >= 8 && currentTime < 12) || (currentTime >= 16 && currentTime < 20.5);
   
   const statusKey = isOpen ? 'locationOpen' : 'locationClosed';
-  const statusText = translations[currentLanguage][statusKey];
-  
-  statusElement.textContent = statusText;
+  statusElement.textContent = translations[currentLanguage][statusKey];
   
   if (isOpen) {
     statusElement.className = 'inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 text-sm font-semibold mt-2';
@@ -333,12 +647,4 @@ function checkOpenStatus() {
   }
 }
 
-// Actualizar estado cada minuto
 setInterval(checkOpenStatus, 60000);
-
-// Actualizar estado al cambiar idioma
-const originalSetLanguage = setLanguage;
-setLanguage = function(lang) {
-  originalSetLanguage(lang);
-  checkOpenStatus();
-};
