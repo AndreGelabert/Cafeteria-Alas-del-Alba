@@ -60,10 +60,10 @@
 <nav class="fixed w-full z-50 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-gray-100 dark:border-zinc-800 transition-colors duration-300">
 <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="flex justify-between items-center h-20">
-<div class="flex-shrink-0 flex items-center gap-2">
+<a href="#" class="flex-shrink-0 flex items-center gap-2">
 <span class="material-symbols-outlined text-primary text-3xl">bakery_dining</span>
-<a class="font-display text-3xl text-primary font-bold" href="#">Alas del Alba</a>
-</div>
+<p class="font-display text-3xl text-primary font-bold">Alas del Alba</p>
+</a>
 <div class="hidden md:flex items-center gap-6">
 <div class="flex gap-6 items-center">
 <a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition font-medium" href="#about" data-i18n="navAbout">Sobre Nós</a>
@@ -230,58 +230,58 @@
 <h2 class="font-display text-5xl text-primary mt-2" data-i18n="menuFavorites">Nossos Favoritos</h2>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-<div class="group bg-background-light dark:bg-zinc-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 border border-gray-100 dark:border-zinc-700">
-<div class="h-64 overflow-hidden relative">
-<img alt="Medialunas Artesanales" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB29HTeGkTPnECjwphjtpr5DkLXmpm9KioVqsF6WKeHolq1R2c2xOg2qzkBTLrjaNjnjorLIstx57wSgO54H3rnYkcue9oo14oz3bve9qfssuiJcyoI06kCbLeaRS1kC2NIb6wouLoQXSoTmK83EDXCLuRNA384pa9wnGbWRjM7_oJQqywtQw8qXAc0moSlIHBnLQ232cKdQqapJFjxv4QaBwBM-A-i4cUpKcQmAxC0cwV7sN610TGDUESJqmRcVCTGEwtEctilBss"/>
+<div class="group bg-background-light dark:bg-zinc-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 border border-gray-100 dark:border-zinc-700 flex flex-col">
+<div class="aspect-[4/3] overflow-hidden relative">
+<img alt="Medialunas Artesanales" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500" src="Resources/Images/Medialunas.jpg"/>
 <div class="absolute top-4 right-4 bg-white dark:bg-zinc-900 px-3 py-1 rounded-full text-xs font-bold text-primary shadow-sm" data-i18n="bestSeller">Best Seller</div>
 </div>
-<div class="p-6">
+<div class="p-6 flex flex-col flex-1">
 <h3 class="font-display text-3xl text-gray-800 dark:text-white mb-2" data-i18n="product1">Medialunas Artesanales</h3>
 <p class="text-gray-600 dark:text-gray-400 mb-4 text-sm" data-i18n="product1Desc">Feitas à mão diariamente, amanteigadas e com a doçura perfeita.</p>
-<div class="flex justify-between items-center">
-<span class="font-bold text-primary text-lg" data-i18n="product1Price">R$ 12,00</span>
-<button class="w-8 h-8 rounded-full bg-secondary/20 text-secondary hover:bg-secondary hover:text-white flex items-center justify-center transition">
+<div class="flex justify-between items-center mt-auto">
+<span class="font-bold text-primary text-lg" data-i18n="product1Price">R$ 8,00</span>
+<!-- <button class="w-8 h-8 rounded-full bg-secondary/20 text-secondary hover:bg-secondary hover:text-white flex items-center justify-center transition">
 <span class="material-symbols-outlined text-sm">add</span>
-</button>
+</button> -->
 </div>
 </div>
 </div>
-<div class="group bg-background-light dark:bg-zinc-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 border border-gray-100 dark:border-zinc-700">
-<div class="h-64 overflow-hidden">
-<img alt="Café de Especialidade" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtgB_eSdubP8xUK3ACuX6_X_-C4K-sqo6xoinkthBVtACtmSZae3YKEdoZ3oJ7zQbWGiAd_DZbYHtzTSnX4KY_4c_zbHCniM7dVsqJHtBLReKZ0FbdQb_n9yiFD3E_-9kvoI5D2I1g2fLgIssV7z5XXuP46cxjWb0VmYwNwnmKA3ZqW28HbnImx3LPc0AZged9ITsj1lzoNGVq3uC6a4jxa4E8zduiZQK7r9w14zo3poeabAWw34Jqp0hMEfL-p8UwF8IewCoouFA"/>
+<div class="group bg-background-light dark:bg-zinc-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 border border-gray-100 dark:border-zinc-700 flex flex-col">
+<div class="aspect-[4/3] overflow-hidden">
+<img alt="Alfajores da Casa" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500" src="Resources/Images/Alfajores.jpg"/>
 </div>
-<div class="p-6">
-<h3 class="font-display text-3xl text-gray-800 dark:text-white mb-2" data-i18n="product2">Café de Especialidade</h3>
-<p class="text-gray-600 dark:text-gray-400 mb-4 text-sm" data-i18n="product2Desc">Grãos selecionados, torra perfeita e latte art para alegrar seu dia.</p>
-<div class="flex justify-between items-center">
-<span class="font-bold text-primary text-lg" data-i18n="product2Price">R$ 14,00</span>
-<button class="w-8 h-8 rounded-full bg-secondary/20 text-secondary hover:bg-secondary hover:text-white flex items-center justify-center transition">
+<div class="p-6 flex flex-col flex-1">
+<h3 class="font-display text-3xl text-gray-800 dark:text-white mb-2" data-i18n="product2">Alfajores da Casa</h3>
+<p class="text-gray-600 dark:text-gray-400 mb-4 text-sm" data-i18n="product2Desc">Um clássico irresistível. Feitos à mão todos os dias para serem o acompanhamento perfeito para sua infusão favorita.</p>
+<div class="flex justify-between items-center mt-auto">
+<span class="font-bold text-primary text-lg" data-i18n="product2Price">R$ 14,00 - 20,00</span>
+<!-- <button class="w-8 h-8 rounded-full bg-secondary/20 text-secondary hover:bg-secondary hover:text-white flex items-center justify-center transition">
 <span class="material-symbols-outlined text-sm">add</span>
-</button>
+</button> -->
 </div>
 </div>
 </div>
-<div class="group bg-background-light dark:bg-zinc-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 border border-gray-100 dark:border-zinc-700">
-<div class="h-64 overflow-hidden">
-<img alt="Cheesecake com frutos vermelhos" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3avQkRlQiwrhBE334n8DumyD-UD2hRfAfBlaQpwMb_OPFbVaaVfpSRxlAA8QEHYhBD_6nM4g6Lce_q_5MZlHTFRdZiyCPQFItojyyxDAUGvpoha02YodASiSfNAJXT_8ARdNCjH6dDeE1RFfNRbp13Pc8IRQY_DO83EcdRJvZ3l5veX2XaGJotemiyEoV6BwHv1FUEH9f3HbrCBZzn3ixI9_LrwbXRz70IomVsuaaaWfyydDHSRAvY63X9nrA_zdwa1580JbpjlM"/>
+<div class="group bg-background-light dark:bg-zinc-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 border border-gray-100 dark:border-zinc-700 flex flex-col">
+<div class="aspect-[4/3] overflow-hidden">
+<img alt="Cheesecake com frutos vermelhos" class="w-full h-full object-cover object-[25%_75%] transform group-hover:scale-110 transition duration-500" src="Resources/Images/Cheescake.jpg"/>
 </div>
-<div class="p-6">
+<div class="p-6 flex flex-col flex-1">
 <h3 class="font-display text-3xl text-gray-800 dark:text-white mb-2" data-i18n="product3">Cheesecake com Frutos Vermelhos</h3>
 <p class="text-gray-600 dark:text-gray-400 mb-4 text-sm" data-i18n="product3Desc">Suave e cremoso, com uma base de biscoito caseiro e uma generosa camada de geléia de frutas silvestres.</p>
-<div class="flex justify-between items-center">
+<div class="flex justify-between items-center mt-auto">
 <span class="font-bold text-primary text-lg" data-i18n="product3Price">R$ 28,00</span>
-<button class="w-8 h-8 rounded-full bg-secondary/20 text-secondary hover:bg-secondary hover:text-white flex items-center justify-center transition">
+<!-- <button class="w-8 h-8 rounded-full bg-secondary/20 text-secondary hover:bg-secondary hover:text-white flex items-center justify-center transition">
 <span class="material-symbols-outlined text-sm">add</span>
-</button>
+</button> -->
 </div>
 </div>
 </div>
 </div>
 <div class="text-center mt-12">
-<a class="inline-flex items-center gap-2 text-primary font-bold hover:text-teal-700 transition" href="#">
-                    <span data-i18n="menuViewAll">Ver menu completo</span>
-                    <span class="material-symbols-outlined">arrow_forward</span>
-</a>
+    <div class="inline-flex items-center gap-2 text-amber-500 font-semibold opacity-80">
+        <span class="material-symbols-outlined">construction</span>
+        <span data-i18n="catalogConstruction">Catálogo completo em construção</span>
+    </div>
 </div>
 </div>
 </section>
@@ -321,7 +321,7 @@
 <span class="material-symbols-outlined mt-1">schedule</span>
 <div>
 <h3 class="font-bold text-lg mb-1" data-i18n="locationHours">Horário</h3>
-<p class="text-teal-100" data-i18n="locationHoursText">Todos os dias<br/>8:00 AM – 12:00 PM<br/>4:00 PM – 8:30 PM</p>
+<p class="text-teal-100" data-i18n="locationHoursText">Todos os dias<br/>8:15 AM - 11:30 AM<br/>15:30 PM - 19:30</p>
 <span id="open-status" class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 text-sm font-semibold mt-2"></span>
 </div>
 </div>
@@ -372,13 +372,13 @@
                         </p>
 </div>
 <div class="flex gap-4">
-<a class="w-10 h-10 rounded-full bg-zinc-800 flex items-center justify-center hover:bg-primary hover:text-white transition duration-300 border border-zinc-700 hover:border-primary" href="#">
+<a class="w-10 h-10 rounded-full bg-zinc-800 flex items-center justify-center hover:bg-primary hover:text-white transition duration-300 border border-zinc-700 hover:border-primary" href="https://www.facebook.com/profile.php?id=100085293247610" target="_blank" rel="noopener noreferrer">
 <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path clip-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" fill-rule="evenodd"></path></svg>
 </a>
-<a class="w-10 h-10 rounded-full bg-zinc-800 flex items-center justify-center hover:bg-primary hover:text-white transition duration-300 border border-zinc-700 hover:border-primary" href="#">
+<a class="w-10 h-10 rounded-full bg-zinc-800 flex items-center justify-center hover:bg-primary hover:text-white transition duration-300 border border-zinc-700 hover:border-primary" href="https://www.instagram.com/alasdelalba.sc/" target="_blank" rel="noopener noreferrer">
 <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path clip-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772 4.902 4.902 0 011.772-1.153c.636-.247 1.363-.416 2.427-.465C9.673 2.013 10.03 2 12.315 2zm-1.008 5.4c-2.643 0-4.903 2.26-4.903 4.903 0 2.644 2.26 4.904 4.903 4.904 2.644 0 4.904-2.26 4.904-4.904 0-2.643-2.26-4.903-4.904-4.903zm0 8.017a3.118 3.118 0 01-3.117-3.117 3.118 3.118 0 013.117-3.117 3.118 3.118 0 01-3.117 3.117zm5.955-8.406a1.192 1.192 0 100 2.385 1.192 1.192 0 000-2.385z" fill-rule="evenodd"></path></svg>
 </a>
-<a class="w-10 h-10 rounded-full bg-zinc-800 flex items-center justify-center hover:bg-primary hover:text-white transition duration-300 border border-zinc-700 hover:border-primary" href="#">
+<a class="w-10 h-10 rounded-full bg-zinc-800 flex items-center justify-center hover:bg-primary hover:text-white transition duration-300 border border-zinc-700 hover:border-primary" href="https://wa.me/5547992200995" target="_blank" rel="noopener noreferrer">
 <span class="material-symbols-outlined text-sm">chat</span>
 </a>
 </div>
