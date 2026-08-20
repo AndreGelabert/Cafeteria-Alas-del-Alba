@@ -1,7 +1,5 @@
 # Cafeteria Alas del Alba
 
-# Cafeteria Alas del Alba
-
 Bem-vindo ao repositório da **Cafeteria Alas del Alba**, uma landing page desenvolvida para apresentar a essência de uma cafeteria acolhedora, moderna e convidativa.
 
 ## Sobre o projeto
@@ -27,7 +25,7 @@ A landing page tem como objetivo oferecer uma experiência simples, bonita e res
 A estrutura pode variar conforme a implementação, mas normalmente inclui:
 
 - `index.html` — página principal
-- `script.js` — lógica e interações da landing page
+- `site.js` — lógica e interações da landing page
 - Arquivos de mídia e estilos adicionais, se aplicáveis
 
 ## Como executar o projeto
